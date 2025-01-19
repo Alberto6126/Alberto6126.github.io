@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
+
+
+
+body{
+    margin: 0;
+    background: linear-gradient(45deg, #c13b36, #3b9a3d);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    font-family: 'montserrat';
+}
+#navtop{
+    background-color: #c13b36;
+    margin: 0;
+}
+footer{
+    position: relative;
+    opacity: 100%;
+    bottom: 0px;
+    width: 100%;
+    background-color: #9c2d2f;
+    margin: 0;
+}
+
+#ultop{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#ulbottom{
+    margin: 0 auto;
+    list-style: none;
+    padding: 10px;
+}
+.topli{
+    padding: 20px;
+    font-family: 'montserrat', sans-serif;
+    color: white;
+
+}
+.topli:hover{
+    background-color: #ff5733;
+}
+.bottomli{
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 3px;
+    padding: 5px;
+    color:#EBEBEB;
+    text-align: center;
+    font-family: 'montserrat';
+}
+article h2{
+    font-family: 'montserrat';
+}
+
+#contenedorForm {
+    display: flex;
+    justify-content: center;
+}
+form{
+    background-color: #EBEBEB;
+    width: fit-content; 
+    margin: 100px;
+    border-radius: 0px;
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 10px 10px rgba(122, 201, 147, 0.723);
+}
+input, textarea{
+    margin-left: 20px;
+    border-style: none;
+    outline-style: solid;
+    outline-color: #bababa;
+    border-radius: 5px;
+}
+input:focus, textarea:focus{
+    background-color: #92d28e;
+    margin-left: 20px;
+    border-style: none;
+    outline-style: solid;
+    outline-color: #bababa;
+    outline-width:  3px;
+    border-radius: 5px;
+}
+#envio{
+display: flex;
+justify-content: center;  
+padding: 10px; 
+}
+input[type="submit"]{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+#contenedorMsg{
+    display: flex;
+    justify-content: center;
+}
+input[id="msg"]{
+    margin:0;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100px;
+}
+textarea{
+    margin-left: 0;
+    width: 100%;
+    resize: vertical; 
+}
+textarea:focus{
+    margin-left: inherit;
+}
+#logo{
+visibility: hidden;
+width:100px;
+margin: 20px;
+margin-top: 20px;
+margin-bottom: -40px;
+justify-content: left;
+position: absolute;
+}
+#envioForm{
+    font-weight: bolder;
+    font-size: large;
+    color:#bababa;
+}
+

@@ -1,150 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_normal/contacto.css">
+        <!-- <link rel="stylesheet" href="style_navidad/contactoNavidad.css"> -->
         <title>Contacto</title>
-        <meta charset="UTF-8">
-        <style>
-            html{
-                height: 100%;
-            }
-            body{
-                height: 100%;
-                width: 100%;
-                margin: 0;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background: rgb(22, 0, 22);
-                background-image: linear-gradient(300deg, #000000, #030020);}
-            header{
-                background: rgb(22, 0, 22);
-                background-image: linear-gradient(90deg, #290c0c, #1b0424);
-                margin: 0;
-            }
-            h1{
-                text-align: center;
-                color: #FFFFF5;
-                font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                letter-spacing: 6.5px; /*espaciado entre letra y letra*/
-                line-height: 60px; /*altura de línea*/
-                font-size: 60px;
-                margin-top: -5px;
-                padding: 70px;
-                padding-top: 30px;
-                padding-bottom: 80px;
-
-            } 
-            h2{
-                margin-top: -135px;
-                text-align: center;
-                color: hwb(59 54% 0%);
-                font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin-bottom: -30px;
-                padding: 20px;
-            }
-            p{ 
-                text-align: center;
-                font-family: 'Ubuntu mono', Helvetica, sans-serif;
-                color: #ffffff;
-                position:relative;
-	            margin:0 auto;
-                margin-top: 100px;
-                margin-bottom: 40px;
-	            } 
-
-
-                /*Arreglar margin*/
-            .ul1{
-                outline-color: white;
-                outline-width: 2px;
-                outline-style: solid;
-                border-radius: 10px;
-                font-family: 'Ubuntu mono','Segoe UI', Helvetica, sans-serif;
-                color: #ffffff;
-                background: rgb(56, 56, 56);              
-                background: rgb(22, 0, 22);
-                background-image: linear-gradient(90deg, #290c0c, #1b0424);
-                position:relative;
-                margin: auto;
-                margin-bottom: 40px;
-	            padding:60px;
-	            width:50%;
-                line-height: 30px;
-            }
-            .ul2{
-                font-family: 'Ubuntu mono','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                list-style: none;
-                display: flex;
-                align-items: center;
-                justify-content: center; 
-                /* margin-right: 170px; */
-            }
-            .ul2 >li > a {
-                outline-color: white;
-                outline-width: 3px;
-                outline-style: solid;
-                border-radius: 15px;
-                padding: 20px;
-                color: white;
-                text-decoration: none;
-                margin:30px;
-            }
-            .naranja{
-                color: rgb(255, 204, 109);
-                font-style:normal;
-            }
-            .violeta{
-                color: rgb(255, 106, 223);
-                font-style:normal;
-            }
-            .azul{
-                color: #039dc4;
-            }
-            .tituloAzul{
-                list-style: none;
-                margin-left: -10px;
-            }
-
-            footer{
-                position: relative;
-                background-color: #290c0c;
-                background-image: linear-gradient(300deg, rgb(10, 0, 34) 0%, rgb(54, 0, 16) 100%);
-                bottom: 0px;
-                margin-top:530px;
-                margin-right: 0;
-                margin-left:0;
-                width: 100%;
-                height: 50px;
-                padding: 60px;
-            }
-        </style>
+        <meta charset ="UTF-8">
+        <script src="scriptcontacto.js"></script>
     </head>
     <body>
-        <header>
-            <h1>
-                 Hola
-            </h1>
-            
-             <h2>
-                Contacto
-            </h2>
-        </header>
-    <main>
-        <p>
-            Contacta conmigo
-        </p>
-    </main>
-              
-    <footer>
-        <ul class="ul2">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="cv.html" >Curriculum</a></li>  
-            <li><a href="aficiones.html">Aficiones</a></li>
-            <li><a href="juego.html">Juego</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </footer>
+        <nav id="navtop">
+            <img id="logo" src="img/logo.png"/>
+            <ul id="ultop">
+                <li class="topli"><a href="index.html">Inicio</a></li>
+                <li class="topli"><a href="cv.html">CV</a></li>
+                <li class="topli"><a href="sobremi.html">Sobre mí</a></li>
+                <li class="topli"><a href="juego.html">Juego</a></li>
+                <li class="topli"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article id="contenedorForm">
+                <form method="post" action="index.html" onsubmit="prueba(event);">
+                    <h2>Formulario de contacto</h2>
+                    <p><label for="nombreForm">*Nombre:<input type="text" placeholder="Nombre" id="nombreForm" required></label></p>
+                    <p><label for="fechaForm">Fecha de nacimiento:<input type="date" id="fechaForm"></label></p>
+                    <p><label for="emailForm">*Contacto:<input type="email" placeholder="ejemplo@gmail.com" id="emailForm" required></label></p>
+                    <p><label for="telefonoForm">Teléfono:<input type="tel"  placeholder="+12 345 67 89 10" id="telefonoForm"></label></p>
+                    <p><label for="colorForm">Color Favorito:<input type="color" id="colorForm"></label></p>
+                    <p><label for="mensajeForm">Mensaje</label></p>
+                    <p id="contenedorMsg"><textarea name="texto" rows="10" id="mensajeForm" maxlength="400"></textarea></p>
+                    <p id = "envio"><input type="submit" id="envioForm" value="Enviar"></p>
+
+                </form>
+            </article>
+        </main>
+        <footer>
+            <ul id="ulbottom">
+                <li class="bottomli"><a href="index.html">Inicio</a></li>
+                <li class="bottomli"><a href="cv.html">CV</a></li>
+                <li class="bottomli"><a href="sobremi.html">Sobre mí</a></li>
+                <li class="bottomli"><a href="juego.html">Juego</a></li>
+                <li class="bottomli"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </footer>
     </body>
-</html>
