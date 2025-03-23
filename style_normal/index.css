@@ -1,19 +1,42 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
-body{
+@media (max-width: 700px) {
+    #ultop {
+        margin-left: 400px;
+        margin-top: 1000px;
+        display: grid;
+        flex-direction: column;
+        justify-content: right; 
+        flex-wrap: nowrap;/* Asegura que los elementos se ajusten en línea */
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+
+    }
+    #logo{
+        display: none;
+    }
+}
+
+body {
     margin: 0;
 }
-header{
+
+header {
     background: rgb(241,230,255);
     background: linear-gradient(90deg, rgba(241,230,255,1) 0%, rgba(184,140,255,1) 100%, rgba(0,212,255,1) 100%);
     padding-top: 370px;
     padding-bottom: 30px;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-h1{
+
+h1 {
     padding: 0;
     margin-left: 50px; 
     letter-spacing: 3px;
@@ -21,10 +44,11 @@ h1{
     margin-bottom: 0;
     font-family: Helvetica, sans-serif;
     font-size: 100px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     width: 25%;
 }
-header h2{
+
+header h2 {
     width: 25%;
     padding: 0;
     letter-spacing: 8px;
@@ -33,18 +57,21 @@ header h2{
     margin-top: 0;
     font-family: Helvetica, sans-serif;
     font-size: 30px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: lighter;
     text-align: inherit;
 }
-p{
+
+p {
     font-family: 'montserrat';
 }
-#navtop{
+
+#navtop {
     background-color: #EBEBEB;
     margin: 0;
 }
-footer{
+
+footer {
     position: relative;
     opacity: 100%;
     bottom: 0px;
@@ -53,66 +80,69 @@ footer{
     margin: 0;
 }
 
-#ultop{
+#ultop {
     margin: 0;
     list-style: none;
     display: flex;
     justify-content: right;
 }
-#ulbottom{
+
+#ulbottom {
     margin: 0 auto;
     list-style: none;
     padding: 10px;
 }
-.topli{
+
+.topli {
     margin-top: 0;
     padding: 20px;
     font-family: 'montserrat';
-
 }
-.topli:hover{
+
+.topli:hover {
     margin-top: 0;
     padding: 20px;
     background-color: #bababa;
 }
-.bottomli{
+
+.bottomli {
     margin-left: 15px;
     margin-right: 15px;
     border-radius: 3px;
     padding: 5px;
-    color:#EBEBEB;
+    color: #EBEBEB;
     text-align: center;
     font-family: 'montserrat';
 }
-main{
+
+main {
     background-color: #EBEBEB;
 }
-.popup{
-    opacity: 0%;
-    font-family: 'montserrat';
-    padding: 10px;
-    background-color: #9755ba;
-    text-align: right;
-    justify-content: right;
-    width: fit-content;
-    border-radius: 10px;
-    transition: .3s;
+
+.popup {
+    display: flex;
+    justify-content: center;
 }
-article h2{
+
+article h2 {
     font-family: 'montserrat';
 }
-article:hover .popup{
+
+article:hover .popup {
     visibility: visible;
     opacity: 100%;
 }
-#popupProyectos{
-margin-top:120px;
+
+#popupProyectos {
+    margin-top: 120px;
 }
-#popupFormacion{
-margin-top: 135px;
+
+#popupFormacion {
+    margin-top: 135px;
 }
-#popupHerramientas{
-margin-top: 15px;
+
+#popupHerramientas {
+    margin-top: 15px;
 }
 
 section {
@@ -125,22 +155,24 @@ section {
 article {
     width: 260px;
     margin: 10px;
-    outline-width: 2px;
-    outline-style: solid;
-    outline-color: rgb(115, 115, 115);
-    border-radius: 0px;
+    outline: 2px solid rgb(115, 115, 115);
     padding: 20px;
-    box-sizing: border-box; 
-    box-shadow: 13px 10px 5px  rgb(166, 166, 166);
+    box-shadow: 0px 0px 20px rgb(166, 166, 166);
+    transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-#logo{
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 30px rgb(102, 102, 102);
+}
+
+#logo {
     transition: 0.15s;
     opacity: 100%;
-    width:100px;
+    width: 100px;
     margin: 20px;
     margin-top: 20px;
     margin-bottom: -40px;
     justify-content: left;
     position: absolute;
-    }
+}

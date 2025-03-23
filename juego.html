@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style_normal/contacto.css">
         <!-- <link rel="stylesheet" href="style_navidad/sobremiNavidad.css"> -->
-        <title>Contacto</title>
-        <meta charset ="UTF-8">
-        <script src="scriptcontacto.js"></script>
+        <title>Juego de Adivinanza</title>
+        <link rel="stylesheet" href="style_normal/juego.css">
     </head>
     <body>
         <nav id="navtop">
@@ -19,6 +20,13 @@
             </ul>
         </nav>
         <main>
+            <section class="contenedor-juego">
+                <h1>Adivina el número</h1>
+                <p>Introduce un número entre 1 y 100:</p>
+                <input type="number" id="numero" min="1" max="100">
+                <button id="verificar">Verificar</button>
+                <p id="resultado"></p>
+            </section>
         </main>
         <footer>
             <ul id="ulbottom">
@@ -29,4 +37,6 @@
                 <li class="bottomli"><a href="contacto.html">Contacto</a></li>
             </ul>
         </footer>
+        <script src="scriptJuego.js"></script>
     </body>
+</html>
