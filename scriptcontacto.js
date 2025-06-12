@@ -38,7 +38,6 @@ function prueba(evento) {
         return;
     }
 
-    // Si todos los datos son correctos, redirigir a una nueva página
-    window.location.href = "nueva_pagina.html";
+    // window.location.href = "nueva_pagina.html";
 }
 

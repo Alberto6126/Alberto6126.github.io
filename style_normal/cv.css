@@ -7,7 +7,7 @@
         display: grid;
         flex-direction: column;
         justify-content: right; 
-        flex-wrap: nowrap;/* Asegura que los elementos se ajusten en línea */
+        flex-wrap: nowrap;
     }
 
     nav{
@@ -161,7 +161,7 @@ article:hover .pruebita{
     outline-color: rgb(115, 115, 115);
     border-radius: 0px;
     padding: 20px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box;
     box-shadow: 13px 10px 10px gray;
     height: fit-content;
 }
@@ -188,14 +188,14 @@ article:hover .pruebita{
 }
 form{
     background-color: #EBEBEB;
-    width: fit-content; /* Ancho fijo para los artículos */
+    width: fit-content; 
     margin: 10px;
     outline-width: 2px;
     outline-style: solid;
     outline-color: rgb(115, 115, 115);
     border-radius: 0px;
     padding: 20px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box; 
     box-shadow: 13px 10px 10px gray;
 }
 input, textarea{

@@ -7,7 +7,7 @@
         display: grid;
         flex-direction: column;
         justify-content: right; 
-        flex-wrap: nowrap;/* Asegura que los elementos se ajusten en línea */
+        flex-wrap: nowrap;
     }
 
     nav{

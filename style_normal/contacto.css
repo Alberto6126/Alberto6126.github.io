@@ -7,7 +7,7 @@
         display: grid;
         flex-direction: column;
         justify-content: right; 
-        flex-wrap: nowrap;/* Asegura que los elementos se ajusten en línea */
+        flex-wrap: nowrap;
     }
 
     nav{
@@ -134,7 +134,7 @@ article:hover .pruebita{
 }
 form{
     background-color: #EBEBEB;
-    width: fit-content; /* Ancho fijo para los artículos */
+    width: fit-content;
     margin: 100px;
     margin-bottom: 10px;
     outline-width: 2px;
@@ -144,7 +144,7 @@ form{
     padding: 30px;
     padding-bottom: 0px;
     padding-top: 0px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box;
     box-shadow: 13px 10px 10px gray;
 }
 input, textarea{

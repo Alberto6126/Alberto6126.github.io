@@ -37,7 +37,7 @@ a {
 }
 
 #navtop {
-    background-color: #c13b36; /* Dorado cálido */
+    background-color: #c13b36; 
     margin: 0;
 }
 
@@ -45,7 +45,7 @@ footer {
     position: relative;
     bottom: 0px;
     width: 100%;
-    background-color: #9c2d2f; /* Rojo navideño */
+    background-color: #9c2d2f; 
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -72,7 +72,7 @@ footer {
 }
 
 .topli:hover {
-    background-color: #ff5733; /* Rojo más brillante */
+    background-color: #ff5733; 
 }
 
 .bottomli {
@@ -84,13 +84,13 @@ footer {
     text-align: center;
 }
 
-/* Sección principal */
+
 main {
     background-color: #f4f8fb;
     padding: 50px 0;
 }
 
-/* Popups de interacción */
+
 .popup {
     opacity: 0;
     font-family: 'Montserrat', sans-serif;
@@ -111,7 +111,7 @@ article:hover .popup {
     opacity: 100%;
 }
 
-/* Estilo de las tarjetas de los artículos */
+
 section {
     display: flex;
     justify-content: center;
